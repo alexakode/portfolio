@@ -9,7 +9,7 @@ html {
 }
 
 :root {
-  --C-scale: 1; /* Standard multiplikator * Forslag til implementering av sterkere farger*/
+  --C-scale: 1; /* Standard multiplikator * Forslag til implementering av sterkere farger linjer 260-70*/
   --base-C: 0.15;
   --base-L: 65%;
   --base-H: 125;
@@ -104,7 +104,7 @@ html {
 
   /* ...repeat for other color roles using the scale... */
   color-scheme: light dark;
-  /* Base color values (hex and oklch, use oklch and adapt values) */
+  /* Base color values (hex/rgb and oklch, use oklch and adapt values) */
   --color-white: #ffffff;
   --color-black: #000000;
   --color-white-oklch: oklch(var(--l-100) var(--c-00) 0);
@@ -115,7 +115,7 @@ html {
   --color-surface-dark-oklch: oklch(var(--l-18) var(--c-01) 125);
   /* ...add more base colors as needed... */
 
-  /* Default (Material) color scheme using static hex values and oklch, all hue 125 */
+  /* Default (Material) color scheme using static rgb values and oklch, all hue 125 */
   --schemes-primary: light-dark(rgb(83 101 37), rgb(186 207 130));
   --schemes-primary: light-dark(
     oklch(var(--l-48) var(--c-08) 125),
