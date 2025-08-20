@@ -489,3 +489,22 @@ html {
     );
   }
 }
+body {
+  margin: 1rem;
+  /* font-family: Arial, sans-serif; */
+  background-color: var(--schemes-background);
+  color: var(--schemes-on-background);
+  display: grid;
+}
+.h1 {
+  color: var(--color-on-primary);
+  background-color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
