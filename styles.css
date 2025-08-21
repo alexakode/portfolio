@@ -105,56 +105,60 @@ html {
   /* ...repeat for other color roles using the scale... */
   color-scheme: light dark;
   /* Base color values (hex/rgb and oklch, use oklch and adapt values) */
+  --h-primary: 125;
+  --h-secondary: 211;
+  --h-tertiary: 268;
+  --h-error: 25;
   --color-white: #ffffff;
   --color-black: #000000;
   --color-white-oklch: oklch(var(--l-100) var(--c-00) 0);
   --color-black-oklch: oklch(var(--l-0) var(--c-00) 0);
   --color-surface-light: #f5fafc;
   --color-surface-dark: #0e1416;
-  --color-surface-light-oklch: oklch(var(--l-98) var(--c-01) 125);
-  --color-surface-dark-oklch: oklch(var(--l-18) var(--c-01) 125);
+  --color-surface-light-oklch: oklch(var(--l-98) var(--c-01) var(--h-primary));
+  --color-surface-dark-oklch: oklch(var(--l-18) var(--c-01) var(--h-primary));
   /* ...add more base colors as needed... */
 
   /* Default (Material) color scheme using static rgb values and oklch, all hue 125 */
   --schemes-primary: light-dark(rgb(83 101 37), rgb(186 207 130));
   --schemes-primary: light-dark(
-    oklch(var(--l-48) var(--c-08) 125),
-    oklch(var(--l-82) var(--c-08) 125)
+    oklch(var(--l-48) var(--c-08) var(--h-primary)),
+    oklch(var(--l-82) var(--c-08) var(--h-primary))
   );
   --schemes-on-primary: light-dark(var(--color-white), rgb(39 53 0));
   --schemes-on-primary: light-dark(
     var(--color-white-oklch),
-    oklch(var(--l-32) var(--c-05) 125)
+    oklch(var(--l-32) var(--c-05) var(--h-primary))
   );
   --schemes-primary-container: light-dark(rgb(214 235 156), rgb(60 76 14));
   --schemes-primary-container: light-dark(
-    oklch(var(--l-90) var(--c-08) 125),
-    oklch(var(--l-40) var(--c-06) 125)
+    oklch(var(--l-90) var(--c-08) var(--h-primary)),
+    oklch(var(--l-40) var(--c-06) var(--h-primary))
   );
   --schemes-on-primary-container: light-dark(rgb(60 76 14), rgb(214 235 156));
   --schemes-on-primary-container: light-dark(
-    oklch(var(--l-40) var(--c-06) 125),
-    oklch(var(--l-90) var(--c-08) 125)
+    oklch(var(--l-40) var(--c-06) var(--h-primary)),
+    oklch(var(--l-90) var(--c-08) var(--h-primary))
   );
   --schemes-secondary: light-dark(rgb(91 97 71), rgb(195 202 170));
   --schemes-secondary: light-dark(
-    oklch(var(--l-48) var(--c-03) 125),
-    oklch(var(--l-82) var(--c-03) 125)
+    oklch(var(--l-48) var(--c-03) var(--h-primary)),
+    oklch(var(--l-82) var(--c-03) var(--h-primary))
   );
   /*--schemes-on-secondary: light-dark(var(--color-white), #1c3439);*/
   --schemes-on-secondary: light-dark(
     var(--color-white-oklch),
-    oklch(var(--l-32) var(--c-03) 125)
+    oklch(var(--l-32) var(--c-03) var(--h-primary))
   );
   --schemes-secondary-container: light-dark(rgb(223 230 196), rgb(67 73 49));
   --schemes-secondary-container: light-dark(
-    oklch(var(--l-92) var(--c-03) 125),
-    oklch(var(--l-40) var(--c-03) 125)
+    oklch(var(--l-92) var(--c-03) var(--h-primary)),
+    oklch(var(--l-40) var(--c-03) var(--h-primary))
   );
   --schemes-on-secondary-container: light-dark(rgb(67 73 49), rgb(223 230 196));
   --schemes-on-secondary-container: light-dark(
-    oklch(var(--l-40) var(--c-03) 125),
-    oklch(var(--l-92) var(--c-03) 125)
+    oklch(var(--l-40) var(--c-03) var(--h-primary)),
+    oklch(var(--l-92) var(--c-03) var(--h-primary))
   );
   --schemes-tertiary: light-dark(rgb(57 102 95), rgb(161 208 199));
   --schemes-tertiary: light-dark(
@@ -206,8 +210,8 @@ html {
   );
   --schemes-on-background: light-dark(rgb(27 28 21), rgb(227 227 215));
   --schemes-on-background: light-dark(
-    oklch(var(--l-22) var(--c-01) 125),
-    oklch(var(--l-92) var(--c-01) 125)
+    oklch(var(--l-22) var(--c-01) var(--h-primary)),
+    oklch(var(--l-92) var(--c-01) var(--h-primary))
   );
   --schemes-surface: light-dark(
     var(--color-surface-light),
@@ -219,18 +223,18 @@ html {
   );
   --schemes-on-surface: light-dark(rgb(27 28 21), rgb(222 227 215));
   --schemes-on-surface: light-dark(
-    oklch(var(--l-22) var(--c-01) 125),
-    oklch(var(--l-92) var(--c-01) 125)
+    oklch(var(--l-22) var(--c-01) var(--h-primary)),
+    oklch(var(--l-92) var(--c-01) var(--h-primary))
   );
   --schemes-surface-variant: light-dark(rgb(226 228 212), rgb(70 72 60));
   --schemes-surface-variant: light-dark(
-    oklch(var(--l-91) var(--c-01) 125),
-    oklch(var(--l-40) var(--c-01) 125)
+    oklch(var(--l-91) var(--c-01) var(--h-primary)),
+    oklch(var(--l-40) var(--c-01) var(--h-primary))
   );
   --schemes-on-surface-variant: light-dark(rgb(70 72 60), rgb(198 200 184));
   --schemes-on-surface-variant: light-dark(
-    oklch(var(--l-40) var(--c-01) 125),
-    oklch(var(--l-82) var(--c-01) 125)
+    oklch(var(--l-40) var(--c-01) var(--h-primary)),
+    oklch(var(--l-82) var(--c-01) var(--h-primary))
   );
   --schemes-outline: light-dark(rgb(118 120 107), rgb(144 146 132));
   --schemes-outline: light-dark(
@@ -496,9 +500,9 @@ body {
   color: var(--schemes-on-background);
   display: grid;
 }
-.h1 {
-  color: var(--color-on-primary);
-  background-color: var(--color-primary);
+h1 {
+  color: var(--schemes-on-primary);
+  background-color: var(--schemes-color-primary);
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
