@@ -528,14 +528,17 @@ footer {
 }
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   /* justify-content: space-between; */
   align-items: center;
   gap: 1rem;
 }
-header > h1,nav {
+header > h1,
+nav {
   background-color: var(--schemes-primary);
   color: var(--schemes-on-primary);
+  display: flex;
+  flex-direction: row;
 }
 h1,
 h2,
@@ -572,12 +575,22 @@ nav {
   grid-column: 1 / -1;
   background-color: var(--schemes-surface);
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
 }
 nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+nav ul li{
+  background-color: var(--schemes-secondary-container);
+  padding: 0.5rem 1rem;
+  color: var(--schemes-on-secondary-container);
+  border-radius: 2rem;
 }
 .bio {
   grid-column: 2 / -1;
