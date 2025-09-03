@@ -238,13 +238,13 @@ html {
   );
   --schemes-outline: light-dark(rgb(118 120 107), rgb(144 146 132));
   --schemes-outline: light-dark(
-    oklch(var(--l-55) var(--c-01) 125),
-    oklch(var(--l-65) var(--c-01) 125)
+    oklch(var(--l-55) var(--c-01) --h-primary),
+    oklch(var(--l-65) var(--c-01) --h-primary)
   );
   --schemes-outline-variant: light-dark(rgb(198 200 184), rgb(70 72 60));
   --schemes-outline-variant: light-dark(
-    oklch(var(--l-82) var(--c-01) 125),
-    oklch(var(--l-40) var(--c-01) 125)
+    oklch(var(--l-82) var(--c-01) --h-primary),
+    oklch(var(--l-40) var(--c-01) --h-primary)
   );
   --schemes-shadow: var(--color-black);
   --schemes-shadow: var(--color-black-oklch);
@@ -252,13 +252,13 @@ html {
   --schemes-scrim: var(--color-black-oklch);
   --schemes-surface-container: light-dark(rgb(239 239 226), rgb(31 32 25));
   --schemes-surface-container: light-dark(
-    oklch(var(--l-95) var(--c-01) 125),
-    oklch(var(--l-24) var(--c-01) 125)
+    oklch(var(--l-95) var(--c-01) --h-primary),
+    oklch(var(--l-24) var(--c-01) --h-primary)
   );
   --schemes-surface-tint: light-dark(rgb(83 101 37), rgb(186 207 130));
   --schemes-surface-tint: light-dark(
-    oklch(var(--l-48) var(--c-08) 125),
-    oklch(var(--l-82) var(--c-08) 125)
+    oklch(var(--l-48) var(--c-08) --h-primary),
+    oklch(var(--l-82) var(--c-08) --h-primary)
   );
 }
 @media (color-gamut: p3) {
@@ -279,40 +279,40 @@ html {
     /* No need to repeat --l-* and --c-* variables already defined in :root */
 
     --schemes-primary: light-dark(
-      oklch(var(--l-20) var(--c-08) 125),
-      oklch(var(--l-95) var(--c-08) 125)
+      oklch(var(--l-20) var(--c-08) --h-primary),
+      oklch(var(--l-95) var(--c-08) --h-primary)
     );
     --schemes-surface-tint: light-dark(
-      oklch(var(--l-25) var(--c-08) 125),
-      oklch(var(--l-80) var(--c-08) 125)
+      oklch(var(--l-25) var(--c-08) --h-primary),
+      oklch(var(--l-80) var(--c-08) --h-primary)
     );
     --schemes-on-primary: light-dark(
       var(--color-white-oklch),
       var(--color-black-oklch)
     );
     --schemes-primary-container: light-dark(
-      oklch(var(--l-15) var(--c-08) 125),
-      oklch(var(--l-85) var(--c-08) 125)
+      oklch(var(--l-15) var(--c-08) --h-primary),
+      oklch(var(--l-85) var(--c-08) --h-primary)
     );
     --schemes-on-primary-container: light-dark(
       var(--color-white-oklch),
-      oklch(var(--l-5) var(--c-00) 125)
+      oklch(var(--l-5) var(--c-00) --h-primary)
     );
     --schemes-secondary: light-dark(
-      oklch(var(--l-10) var(--c-03) 125),
-      oklch(var(--l-98) var(--c-03) 125)
+      oklch(var(--l-10) var(--c-03) --h-primary),
+      oklch(var(--l-98) var(--c-03) --h-primary)
     );
     --schemes-on-secondary: light-dark(
       var(--color-white-oklch),
       var(--color-black-oklch)
     );
     --schemes-secondary-container: light-dark(
-      oklch(var(--l-20) var(--c-03) 125),
-      oklch(var(--l-90) var(--c-03) 125)
+      oklch(var(--l-20) var(--c-03) --h-primary),
+      oklch(var(--l-90) var(--c-03) --h-primary)
     );
     --schemes-on-secondary-container: light-dark(
       var(--color-white-oklch),
-      oklch(var(--l-5) var(--c-00) 125)
+      oklch(var(--l-5) var(--c-00) --h-primary)
     );
     --schemes-tertiary: light-dark(
       oklch(var(--l-15) var(--c-06) 184),
@@ -336,40 +336,40 @@ html {
       var(--color-surface-dark)
     );
     --schemes-background: light-dark(
-      oklch(var(--l-98) var(--c-01) 125),
-      oklch(var(--l-10) var(--c-01) 125)
+      oklch(var(--l-98) var(--c-01) --h-primary),
+      oklch(var(--l-10) var(--c-01) --h-primary)
     );
     --schemes-surface: light-dark(
       var(--color-surface-light),
       var(--color-surface-dark)
     );
     --schemes-surface: light-dark(
-      oklch(var(--l-98) var(--c-01) 125),
-      oklch(var(--l-10) var(--c-01) 125)
+      oklch(var(--l-98) var(--c-01) --h-primary),
+      oklch(var(--l-10) var(--c-01) --h-primary)
     );
     --schemes-on-background: light-dark(
-      oklch(var(--l-10) var(--c-01) 125),
-      oklch(var(--l-90) var(--c-01) 125)
+      oklch(var(--l-10) var(--c-01) --h-primary),
+      oklch(var(--l-90) var(--c-01) --h-primary)
     );
     --schemes-on-surface: light-dark(
       var(--color-black-oklch),
       var(--color-white-oklch)
     );
     --schemes-surface-variant: light-dark(
-      oklch(var(--l-90) var(--c-04) 125),
-      oklch(var(--l-32) var(--c-04) 125)
+      oklch(var(--l-90) var(--c-04) --h-primary),
+      oklch(var(--l-32) var(--c-04) --h-primary)
     );
     --schemes-on-surface-variant: light-dark(
       var(--color-black-oklch),
       var(--color-white-oklch)
     );
     --schemes-outline: light-dark(
-      oklch(var(--l-15) var(--c-01) 125),
-      oklch(var(--l-95) var(--c-01) 125)
+      oklch(var(--l-15) var(--c-01) --h-primary),
+      oklch(var(--l-95) var(--c-01) --h-primary)
     );
     --schemes-outline-variant: light-dark(
-      oklch(var(--l-25) var(--c-01) 125),
-      oklch(var(--l-80) var(--c-01) 125)
+      oklch(var(--l-25) var(--c-01) --h-primary),
+      oklch(var(--l-80) var(--c-01) --h-primary)
     );
     --schemes-shadow: light-dark(
       var(--color-black-oklch),
@@ -380,8 +380,8 @@ html {
       color-mix(in oklab, black 70%, white 30%)
     );
     --schemes-surface-container: light-dark(
-      oklch(var(--l-90) var(--c-01) 125),
-      oklch(var(--l-20) var(--c-01) 125)
+      oklch(var(--l-90) var(--c-01) --h-primary),
+      oklch(var(--l-20) var(--c-01) --h-primary)
     );
   }
 }
@@ -389,46 +389,52 @@ html {
   :root {
     /* Only override variables that differ from :root, use aliases where possible */
     --schemes-primary: light-dark(rgb(44 59 0), rgb(208 229 150));
-    --schemes-primary: light-dark(oklch(43.5% 0.08 125), oklch(82% 0.08 125));
+    --schemes-primary: light-dark(
+      oklch(43.5% 0.08 --h-primary),
+      oklch(82% 0.08 --h-primary)
+    );
     --schemes-surface-tint: light-dark(rgb(44 59 0), rgb(208 229 150));
     --schemes-surface-tint: light-dark(
-      oklch(43.5% 0.08 125),
-      oklch(82% 0.08 125)
+      oklch(43.5% 0.08 --h-primary),
+      oklch(82% 0.08 --h-primary)
     );
     --schemes-on-primary: light-dark(var(--color-white), rgb(30 41 0));
     --schemes-on-primary: light-dark(
       var(--color-white-oklch),
-      oklch(21% 0.05 125)
+      oklch(21% 0.05 --h-primary)
     );
     --schemes-primary-container: light-dark(rgb(98 116 50), rgb(133 152 82));
     --schemes-primary-container: light-dark(
-      oklch(90% 0.08 125),
-      oklch(32% 0.08 125)
+      oklch(90% 0.08 --h-primary),
+      oklch(32% 0.08 --h-primary)
     );
     --schemes-on-primary-container: light-dark(rgb(255 255 255), rgb(0 0 0));
     --schemes-on-primary-container: light-dark(
-      oklch(10% 0.01 125),
-      oklch(90% 0.08 125)
+      oklch(10% 0.01 --h-primary),
+      oklch(90% 0.08 --h-primary)
     );
     --schemes-secondary: light-dark(rgb(50 57 33), rgb(217 224 190));
-    --schemes-secondary: light-dark(oklch(45% 0.03 125), oklch(80% 0.03 125));
+    --schemes-secondary: light-dark(
+      oklch(45% 0.03 --h-primary),
+      oklch(80% 0.03 --h-primary)
+    );
     --schemes-on-secondary: light-dark(var(--color-white), rgb(34 40 18));
     --schemes-on-secondary: light-dark(
       var(--color-white-oklch),
-      oklch(20% 0.03 125)
+      oklch(20% 0.03 --h-primary)
     );
     --schemes-secondary-container: light-dark(
       rgb(105 112 85),
       rgb(141 148 118)
     );
     --schemes-secondary-container: light-dark(
-      oklch(90% 0.03 125),
-      oklch(30% 0.03 125)
+      oklch(90% 0.03 --h-primary),
+      oklch(30% 0.03 --h-primary)
     );
     --schemes-on-secondary-container: light-dark(rgb(255 255 255), rgb(0 0 0));
     --schemes-on-secondary-container: light-dark(
-      oklch(10% 0.01 125),
-      oklch(90% 0.03 125)
+      oklch(10% 0.01 --h-primary),
+      oklch(90% 0.03 --h-primary)
     );
     --schemes-tertiary: light-dark(rgb(11 61 55), rgb(182 230 220));
     --schemes-tertiary: light-dark(oklch(45% 0.05 184), oklch(80% 0.05 184));
@@ -452,35 +458,47 @@ html {
       var(--color-surface-light),
       var(--color-surface-dark)
     );
-    --schemes-background: light-dark(oklch(98% 0.01 125), oklch(12% 0.01 125));
+    --schemes-background: light-dark(
+      oklch(98% 0.01 --h-primary),
+      oklch(12% 0.01 --h-primary)
+    );
     --schemes-surface: light-dark(
       var(--color-surface-light),
       var(--color-surface-dark)
     );
-    --schemes-surface: light-dark(oklch(98% 0.01 125), oklch(12% 0.01 125));
+    --schemes-surface: light-dark(
+      oklch(98% 0.01 --h-primary),
+      oklch(12% 0.01 --h-primary)
+    );
     --schemes-on-background: light-dark(rgb(27 28 21), rgb(227 227 215));
     --schemes-on-background: light-dark(
-      oklch(12% 0.01 125),
-      oklch(88% 0.01 125)
+      oklch(12% 0.01 --h-primary),
+      oklch(88% 0.01 --h-primary)
     );
     --schemes-on-surface: light-dark(rgb(16 18 11), rgb(255 255 255));
-    --schemes-on-surface: light-dark(oklch(12% 0.01 125), oklch(88% 0.01 125));
+    --schemes-on-surface: light-dark(
+      oklch(12% 0.01 --h-primary),
+      oklch(88% 0.01 --h-primary)
+    );
     --schemes-surface-variant: light-dark(rgb(226 228 212), rgb(70 72 60));
     --schemes-surface-variant: light-dark(
-      oklch(90% 0.01 125),
-      oklch(30% 0.01 125)
+      oklch(90% 0.01 --h-primary),
+      oklch(30% 0.01 --h-primary)
     );
     --schemes-on-surface-variant: light-dark(rgb(53 55 44), rgb(220 222 206));
     --schemes-on-surface-variant: light-dark(
-      oklch(30% 0.01 125),
-      oklch(80% 0.01 125)
+      oklch(30% 0.01 --h-primary),
+      oklch(80% 0.01 --h-primary)
     );
     --schemes-outline: light-dark(rgb(81 84 71), rgb(177 179 164));
-    --schemes-outline: light-dark(oklch(55% 0.01 125), oklch(65% 0.01 125));
+    --schemes-outline: light-dark(
+      oklch(55% 0.01 --h-primary),
+      oklch(65% 0.01 --h-primary)
+    );
     --schemes-outline-variant: light-dark(rgb(108 110 97), rgb(144 146 131));
     --schemes-outline-variant: light-dark(
-      oklch(80% 0.01 125),
-      oklch(30% 0.01 125)
+      oklch(80% 0.01 --h-primary),
+      oklch(30% 0.01 --h-primary)
     );
     --schemes-shadow: var(--color-black);
     --schemes-shadow: var(--color-black-oklch);
@@ -488,8 +506,8 @@ html {
     --schemes-scrim: var(--color-black-oklch);
     --schemes-surface-container: light-dark(#dee3e5, #2b3133);
     --schemes-surface-container: light-dark(
-      oklch(90% 0.01 125),
-      oklch(20% 0.01 125)
+      oklch(90% 0.01 --h-primary),
+      oklch(20% 0.01 --h-primary)
     );
   }
 }
@@ -501,11 +519,13 @@ body {
   display: grid;
 }
 h1 {
-  color: var(--schemes-on-primary);
-  background-color: var(--schemes-color-primary);
-  font-size: 2rem;
+  color: var(--schemes-on-surface-variant);
+  background-color: var(--schemes-surface-variant);
+  border-radius: 1rem;
+  /* font-size: 2rem; */
   font-weight: bold;
   margin: 0;
+  padding: 0.2rem 1rem;
 }
 p {
   color: var(--schemes-on-surface);
@@ -513,4 +533,10 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   margin: 0.5rem 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  padding: 2rem;
 }
