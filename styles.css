@@ -636,6 +636,9 @@ section {
   border-radius: 0.5rem;
   padding: 1rem;
 }
+.icon {
+  fill: var(--schemes-on-surface);
+}
 @media screen and (max-width: 768px) {
   header,
   main {
