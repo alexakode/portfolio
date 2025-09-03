@@ -512,16 +512,23 @@ html {
   }
 }
 body {
-  margin: 1rem;
+  margin: 0;
   /* font-family: Arial, sans-serif; */
   background-color: var(--schemes-background);
   color: var(--schemes-on-background);
   display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+header, footer {
+  padding: 1rem 2rem;
+  background-color: var(--schemes-primary);
+  color: var(--schemes-on-primary);
 }
 h1 {
   color: var(--schemes-on-surface-variant);
   background-color: var(--schemes-surface-variant);
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   /* font-size: 2rem; */
   font-weight: bold;
   margin: 0;
@@ -534,7 +541,7 @@ p {
   line-height: 1.5;
   margin: 0.5rem 0;
 }
-.grid {
+.main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
