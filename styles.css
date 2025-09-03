@@ -520,12 +520,15 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
-header, footer {
+header,
+footer {
   padding: 1rem 2rem;
   background-color: var(--schemes-primary);
   color: var(--schemes-on-primary);
 }
-h1 {
+h1,
+h2,
+h3 {
   color: var(--schemes-on-surface-variant);
   background-color: var(--schemes-surface-variant);
   /* border-radius: 1rem; */
@@ -541,9 +544,36 @@ p {
   line-height: 1.5;
   margin: 0.5rem 0;
 }
-.main {
+img {
+  max-width: 100%;
+  border-radius: 1rem;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
   padding: 2rem;
+}
+.bio {
+  grid-column: 2 / -1;
+}
+.projects {
+  grid-column: 1 / -1;
+  background-color: var(--schemes-surface-container);
+
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11em, 1fr));
+  /* adjust min to content */
+  gap: 1rem;
+}
+.card {
+  background-color: var(--schemes-surface);
+  border: 1px solid var(--schemes-outline);
+  border-radius: 0.5rem;
+  padding: 1rem;
 }
