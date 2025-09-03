@@ -523,6 +523,17 @@ body {
 header,
 footer {
   padding: 1rem 2rem;
+  background-color: var(--schemes-primary-container);
+  color: var(--schemes-on-primary-container);
+}
+header {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 1rem;
+}
+header > h1,nav {
   background-color: var(--schemes-primary);
   color: var(--schemes-on-primary);
 }
@@ -557,13 +568,24 @@ main {
   gap: 1rem;
   padding: 2rem;
 }
+nav {
+  grid-column: 1 / -1;
+  background-color: var(--schemes-surface);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .bio {
   grid-column: 2 / -1;
+  /* grid-row: 1 / 2; */
 }
 .projects {
-  grid-column: 1 / -1;
+  grid-column: 2 / -1;
   background-color: var(--schemes-surface-container);
-
 }
 .project-grid {
   display: grid;
