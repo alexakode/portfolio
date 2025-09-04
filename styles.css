@@ -111,8 +111,8 @@ html {
   --h-error: 25;
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-white-oklch: oklch(var(--l-100) var(--c-00) 0);
-  --color-black-oklch: oklch(var(--l-0) var(--c-00) 0);
+  --color-white: oklch(var(--l-100) var(--c-00) 0);
+  --color-black: oklch(var(--l-0) var(--c-00) 0);
   --color-surface-light: #f5fafc;
   --color-surface-dark: #0e1416;
   --color-surface-light-oklch: oklch(var(--l-98) var(--c-01) var(--h-primary));
@@ -577,8 +577,8 @@ main {
   grid-template-columns: 10em 2fr;
   gap: 1rem;
   padding: 2rem;
-  background-color: var(--schemes-surface);
-  color: var(--schemes-on-surface);
+  background-color: var(--schemes-surface-container);
+  color: var(--schemes-on-surface-container);
 }
 nav {
   grid-column: 1 / -1;
@@ -589,7 +589,7 @@ nav {
 nav ul {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 1rem;
   list-style: none;
   padding: 0;
@@ -599,9 +599,18 @@ nav ul li {
   background-color: var(--schemes-secondary-container);
   padding: 0.5rem 1rem;
   color: var(--schemes-on-secondary-container);
-  border-radius: 2rem;
+}
+nav ul li:first-child {
+  border-start-start-radius: 1rem;
+  border-end-start-radius: 1rem;
+}
+nav ul li:last-child {
+  border-start-end-radius: 1rem;
+  border-end-end-radius: 1rem;
 }
 section {
+  background-color: var(--schemes-surface);
+  color: var(--schemes-on-surface);
   margin-bottom: 2rem;
   padding: 1rem;
   gap: 1rem;
@@ -639,7 +648,7 @@ section {
 .icon {
   fill: var(--schemes-on-surface);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   header,
   main {
     display: flex;
@@ -647,5 +656,21 @@ section {
   }
   .menu {
     display: none;
+  }
+}
+@media (max-width: 24rem) {
+  nav ul {
+    flex-direction: column;
+    /* gap: 0.5rem; */
+  }
+  nav ul li:first-child {
+    border-start-start-radius: 1rem;
+    border-start-end-radius: 1rem;
+    border-end-start-radius: 0rem;
+  }
+  nav ul li:last-child {
+    border-start-end-radius: 0rem;
+    border-end-end-radius: 1rem;
+    border-end-start-radius: 1rem;
   }
 }
