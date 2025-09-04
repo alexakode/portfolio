@@ -127,7 +127,7 @@ html {
   );
   --schemes-on-primary: light-dark(var(--color-white), rgb(39 53 0));
   --schemes-on-primary: light-dark(
-    var(--color-white-oklch),
+    var(--color-white),
     oklch(var(--l-32) var(--c-05) var(--h-primary))
   );
   --schemes-primary-container: light-dark(rgb(214 235 156), rgb(60 76 14));
@@ -147,7 +147,7 @@ html {
   );
   /*--schemes-on-secondary: light-dark(var(--color-white), #1c3439);*/
   --schemes-on-secondary: light-dark(
-    var(--color-white-oklch),
+    var(--color-white),
     oklch(var(--l-32) var(--c-03) var(--h-primary))
   );
   --schemes-secondary-container: light-dark(rgb(223 230 196), rgb(67 73 49));
@@ -167,7 +167,7 @@ html {
   );
   --schemes-on-tertiary: light-dark(var(--color-white), rgb(2 55 49));
   --schemes-on-tertiary: light-dark(
-    var(--color-white-oklch),
+    var(--color-white),
     oklch(var(--l-32) var(--c-05) 184)
   );
   --schemes-tertiary-container: light-dark(rgb(188 236 226), rgb(32 78 71));
@@ -187,7 +187,7 @@ html {
   );
   --schemes-on-error: light-dark(var(--color-white), rgb(105 0 5));
   --schemes-on-error: light-dark(
-    var(--color-white-oklch),
+    var(--color-white),
     oklch(var(--l-32) var(--c-12) 25)
   );
   --schemes-error-container: light-dark(rgb(255 218 214), rgb(147 0 10));
@@ -247,9 +247,7 @@ html {
     oklch(var(--l-40) var(--c-01) --h-primary)
   );
   --schemes-shadow: var(--color-black);
-  --schemes-shadow: var(--color-black-oklch);
   --schemes-scrim: var(--color-black);
-  --schemes-scrim: var(--color-black-oklch);
   --schemes-surface-container: light-dark(rgb(239 239 226), rgb(31 32 25));
   --schemes-surface-container: light-dark(
     oklch(var(--l-95) var(--c-01) --h-primary),
@@ -286,48 +284,39 @@ html {
       oklch(var(--l-25) var(--c-08) --h-primary),
       oklch(var(--l-80) var(--c-08) --h-primary)
     );
-    --schemes-on-primary: light-dark(
-      var(--color-white-oklch),
-      var(--color-black-oklch)
-    );
+    --schemes-on-primary: light-dark(var(--color-white), var(--color-black));
     --schemes-primary-container: light-dark(
       oklch(var(--l-15) var(--c-08) --h-primary),
       oklch(var(--l-85) var(--c-08) --h-primary)
     );
     --schemes-on-primary-container: light-dark(
-      var(--color-white-oklch),
+      var(--color-white),
       oklch(var(--l-5) var(--c-00) --h-primary)
     );
     --schemes-secondary: light-dark(
       oklch(var(--l-10) var(--c-03) --h-primary),
       oklch(var(--l-98) var(--c-03) --h-primary)
     );
-    --schemes-on-secondary: light-dark(
-      var(--color-white-oklch),
-      var(--color-black-oklch)
-    );
+    --schemes-on-secondary: light-dark(var(--color-white), var(--color-black));
     --schemes-secondary-container: light-dark(
       oklch(var(--l-20) var(--c-03) --h-primary),
       oklch(var(--l-90) var(--c-03) --h-primary)
     );
     --schemes-on-secondary-container: light-dark(
-      var(--color-white-oklch),
+      var(--color-white),
       oklch(var(--l-5) var(--c-00) --h-primary)
     );
     --schemes-tertiary: light-dark(
       oklch(var(--l-15) var(--c-06) 184),
       oklch(var(--l-100) var(--c-06) 184)
     );
-    --schemes-on-tertiary: light-dark(
-      var(--color-white-oklch),
-      var(--color-black-oklch)
-    );
+    --schemes-on-tertiary: light-dark(var(--color-white), var(--color-black));
     --schemes-tertiary-container: light-dark(
       oklch(var(--l-25) var(--c-06) 184),
       oklch(var(--l-90) var(--c-06) 184)
     );
     --schemes-on-tertiary-container: light-dark(
-      var(--color-white-oklch),
+      var(--color-white),
       oklch(var(--l-5) var(--c-00) 184)
     );
     /* Removed error color overrides; now inherited from :root for DRYness and consistency */
@@ -351,17 +340,14 @@ html {
       oklch(var(--l-10) var(--c-01) --h-primary),
       oklch(var(--l-90) var(--c-01) --h-primary)
     );
-    --schemes-on-surface: light-dark(
-      var(--color-black-oklch),
-      var(--color-white-oklch)
-    );
+    --schemes-on-surface: light-dark(var(--color-black), var(--color-white));
     --schemes-surface-variant: light-dark(
       oklch(var(--l-90) var(--c-04) --h-primary),
       oklch(var(--l-32) var(--c-04) --h-primary)
     );
     --schemes-on-surface-variant: light-dark(
-      var(--color-black-oklch),
-      var(--color-white-oklch)
+      var(--color-black),
+      var(--color-white)
     );
     --schemes-outline: light-dark(
       oklch(var(--l-15) var(--c-01) --h-primary),
@@ -371,10 +357,7 @@ html {
       oklch(var(--l-25) var(--c-01) --h-primary),
       oklch(var(--l-80) var(--c-01) --h-primary)
     );
-    --schemes-shadow: light-dark(
-      var(--color-black-oklch),
-      var(--color-black-oklch)
-    );
+    --schemes-shadow: light-dark(var(--color-black), var(--color-black));
     --schemes-scrim: light-dark(
       color-mix(in oklab, black 70%, white 30%),
       color-mix(in oklab, black 70%, white 30%)
@@ -400,7 +383,7 @@ html {
     );
     --schemes-on-primary: light-dark(var(--color-white), rgb(30 41 0));
     --schemes-on-primary: light-dark(
-      var(--color-white-oklch),
+      var(--color-white),
       oklch(21% 0.05 --h-primary)
     );
     --schemes-primary-container: light-dark(rgb(98 116 50), rgb(133 152 82));
@@ -420,7 +403,7 @@ html {
     );
     --schemes-on-secondary: light-dark(var(--color-white), rgb(34 40 18));
     --schemes-on-secondary: light-dark(
-      var(--color-white-oklch),
+      var(--color-white),
       oklch(20% 0.03 --h-primary)
     );
     --schemes-secondary-container: light-dark(
@@ -439,10 +422,7 @@ html {
     --schemes-tertiary: light-dark(rgb(11 61 55), rgb(182 230 220));
     --schemes-tertiary: light-dark(oklch(45% 0.05 184), oklch(80% 0.05 184));
     --schemes-on-tertiary: light-dark(var(--color-white), rgb(0 43 38));
-    --schemes-on-tertiary: light-dark(
-      var(--color-white-oklch),
-      oklch(20% 0.05 184)
-    );
+    --schemes-on-tertiary: light-dark(var(--color-white), oklch(20% 0.05 184));
     --schemes-tertiary-container: light-dark(rgb(72 117 109), rgb(108 153 145));
     --schemes-tertiary-container: light-dark(
       oklch(90% 0.05 184),
@@ -501,9 +481,9 @@ html {
       oklch(30% 0.01 --h-primary)
     );
     --schemes-shadow: var(--color-black);
-    --schemes-shadow: var(--color-black-oklch);
+    --schemes-shadow: var(--color-black);
     --schemes-scrim: var(--color-black);
-    --schemes-scrim: var(--color-black-oklch);
+    --schemes-scrim: var(--color-black);
     --schemes-surface-container: light-dark(#dee3e5, #2b3133);
     --schemes-surface-container: light-dark(
       oklch(90% 0.01 --h-primary),
@@ -550,8 +530,8 @@ nav {
 h1,
 h2,
 h3 {
-  color: var(--schemes-on-surface-variant);
-  background-color: var(--schemes-surface-variant);
+  color: var(--schemes-on-surface);
+  background-color: var(--schemes-surface);
   border-radius: 1rem;
   /* font-size: 2rem; */
   font-weight: bold;
@@ -647,6 +627,8 @@ section {
 }
 .icon {
   fill: var(--schemes-on-surface);
+  height: 1rem;
+  width: 1rem;
 }
 @media screen and (max-width: 48rem) {
   header,
