@@ -45,6 +45,7 @@ html {
   --l-42: 42.5%;
   --l-40: 40%;
   --l-32: 32.5%;
+  --l-28: 27.5%;
   --l-25: 25%;
   --l-22: 22.5%;
   --l-20: 20%;
@@ -122,13 +123,13 @@ html {
   /* Default (Material) color scheme using static rgb values and oklch, all hue 125 */
   --schemes-primary: light-dark(rgb(83 101 37), rgb(186 207 130));
   --schemes-primary: light-dark(
-    oklch(var(--l-48) var(--c-08) var(--h-primary)),
+    oklch(var(--l-45) var(--c-08) var(--h-primary)),
     oklch(var(--l-82) var(--c-08) var(--h-primary))
   );
   --schemes-on-primary: light-dark(var(--color-white), rgb(39 53 0));
   --schemes-on-primary: light-dark(
     var(--color-white),
-    oklch(var(--l-32) var(--c-05) var(--h-primary))
+    oklch(var(--l-28) var(--c-05) var(--h-primary))
   );
   --schemes-primary-container: light-dark(rgb(214 235 156), rgb(60 76 14));
   --schemes-primary-container: light-dark(
@@ -629,6 +630,12 @@ section {
   fill: var(--schemes-on-surface);
   height: 1rem;
   width: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, fill 0.3s;
+}
+.icon:hover {
+  background-color: var(--schemes-primary);
+  fill: var(--schemes-on-primary);
 }
 @media screen and (max-width: 48rem) {
   header,
