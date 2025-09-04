@@ -546,6 +546,13 @@ p {
   line-height: 1.5;
   margin: 0.5rem 0;
 }
+a {
+  color: var(--schemes-primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 img {
   max-width: 100%;
   border-radius: 1rem;
