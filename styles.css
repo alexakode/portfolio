@@ -600,11 +600,11 @@ nav.main-nav li,
 a {
   flex: 1;
   display: block;
-  background-color: var(--schemes-secondary);
+  /* background-color: var(--schemes-secondary-container); */
   padding: 0.75rem 1rem;
   /* margin: 0.5 0rem; */
   /* background-color: transparent; */
-  color: var(--schemes-on-secondary-container);
+  /* color: var(--schemes-on-secondary-container); */
 }
 /* nav.main-nav ul li:first-child {
   /* margin-block-start: none; */
