@@ -557,7 +557,7 @@ a:hover {
   /* color: var(--schemes-primary); */
   /* background-color: var(--schemes-primary-container); */
 }
- /* Button hover, adapt with selectors */
+/* Button hover, adapt with selectors */
 img {
   max-width: 100%;
   border-radius: 1rem;
@@ -626,7 +626,6 @@ section {
 .bio {
   grid-column: 2 / -1;
   /* grid-row: 1 / 2; */
-
 }
 .projects {
   grid-column: 2 / -1;
@@ -693,6 +692,11 @@ main-nav a {
   flex-direction: column;
   justify-content: space-between;
   /* text-align: center; */
+}
+.card a:last-child {
+  display: flex;
+  margin-top: auto;
+  align-items: flex-end;
 }
 .icon {
   fill: var(--schemes-on-surface);
