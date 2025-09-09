@@ -552,9 +552,12 @@ a {
   /* color: var(--schemes-primary); */
   text-decoration: none;
 }
-a:hover {
+/* a:hover {
   text-decoration: underline;
-}
+  color: var(--schemes-primary);
+  background-color: var(--schemes-primary-container);
+} */
+ /* Button hover, adapt with selectors */
 img {
   max-width: 100%;
   border-radius: 1rem;
@@ -586,8 +589,8 @@ nav.main-nav ul {
   /* gap: 1rem; */
   list-style: none;
   padding: 0;
-    margin: 0;
-  }
+  margin: 0;
+}
 nav.main-nav ul li,
 nav.main-nav ul li a {
   background-color: var(--schemes-secondary-container);
