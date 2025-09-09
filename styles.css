@@ -552,11 +552,11 @@ a {
   /* color: var(--schemes-primary); */
   text-decoration: none;
 }
-/* a:hover {
+a:hover {
   text-decoration: underline;
-  color: var(--schemes-primary);
-  background-color: var(--schemes-primary-container);
-} */
+  /* color: var(--schemes-primary); */
+  /* background-color: var(--schemes-primary-container); */
+}
  /* Button hover, adapt with selectors */
 img {
   max-width: 100%;
