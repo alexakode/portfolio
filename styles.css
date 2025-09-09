@@ -524,6 +524,7 @@ header {
 header > h1 {
   background-color: var(--schemes-primary);
   color: var(--schemes-on-primary);
+  padding: 0.2rem 1rem;
 }
 header > nav {
   margin-left: auto;
@@ -539,7 +540,6 @@ h3 {
   /* font-size: 2rem; */
   font-weight: bold;
   margin: 0;
-  padding: 0.2rem 1rem;
 }
 p {
   color: var(--schemes-on-surface);
