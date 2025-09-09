@@ -668,7 +668,7 @@ nav.menu ul li:last-child {
   border-end-end-radius: 1rem;
 }
 nav.menu li,
-a {
+nav.menu a {
   margin-bottom: 0.5rem;
   background-color: var(--schemes-surface-variant);
   color: var(--schemes-on-surface-variant);
