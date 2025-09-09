@@ -586,7 +586,12 @@ nav.main-nav ul {
   /* gap: 1rem; */
   list-style: none;
   padding: 0;
-  margin: 0;
+    margin: 0;
+  }
+nav.main-nav ul li,
+nav.main-nav ul li a {
+  background-color: var(--schemes-secondary-container);
+  color: var(--schemes-secondary);
 }
 nav.main-nav li,
 a {
@@ -668,7 +673,9 @@ nav.menu ul li:last-child {
   border-end-end-radius: 1rem;
 }
 nav.menu li,
-nav.menu a {
+nav.menu a,
+main-nav li,
+main-nav a {
   margin-bottom: 0.5rem;
   background-color: var(--schemes-surface-variant);
   color: var(--schemes-on-surface-variant);
