@@ -539,13 +539,25 @@ h3 {
   background-color: var(--schemes-surface);
   border-radius: 1rem;
   /* font-size: 2rem; */
-  font-weight: bold;
+  /* font-weight: bold; */
   margin: 0;
+}
+h1 {
+  font-size: clamp(2rem, 5vw + 1rem, 3rem);
+  line-height: 1.6;
+}
+h2 {
+  font-size: clamp(1.5rem, 4vw + 0.5rem, 2.5rem);
+  line-height: 1.5;
+}
+h3 {
+  font-size: clamp(1.25rem, 3vw + 0.5rem, 2rem);
+  line-height: 1.5;
 }
 p {
   color: var(--schemes-on-surface);
   background-color: var(--schemes-surface);
-  /* font-size: 1rem; */
+  font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem);
   line-height: 1.6;
   margin: 0.5rem 0;
 }
