@@ -704,6 +704,7 @@ main-nav a {
 }
 .card {
   background-color: var(--schemes-surface);
+  color: var(--schemes-on-surface);
   border: 1px solid var(--schemes-outline);
   border-radius: 0.5rem;
   padding: 1rem;
