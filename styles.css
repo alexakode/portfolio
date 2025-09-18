@@ -611,6 +611,9 @@ nav.main-nav ul li a {
   background-color: var(--schemes-secondary-container);
   color: var(--schemes-secondary);
 }
+nav.main-nav ul li a:hover {
+  color: oklch(from var(--schemes-secondary) calc(l + 0.1) c h);
+}
 nav.main-nav li,
 a {
   flex: 1;
@@ -693,6 +696,9 @@ nav.menu ul li:last-child {
   margin-block-end: none;
   border-end-start-radius: 1rem;
   border-end-end-radius: 1rem;
+}
+nav.menu ul li a:hover {
+  color: oklch(from var(--schemes-secondary) calc(l + 0.1) c h);
 }
 nav.menu li,
 nav.menu a,
