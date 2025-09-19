@@ -649,6 +649,16 @@ section {
   grid-column: 2 / -1;
   /* grid-row: 1 / 2; */
 }
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+}
+article {
+  flex: 1 1 50ch;
+  max-width: 60ch;
+}
 .projects {
   grid-column: 2 / -1;
   background-color: var(--schemes-surface-container);
