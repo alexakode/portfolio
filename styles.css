@@ -680,7 +680,7 @@ article p {
   max-width: 60ch;
 }
 .projects {
-  grid-column: 2 / -1;
+  /* grid-column: 2 / -1; */
   background-color: var(--schemes-surface-container);
   color: var(--schemes-on-surface-container);
 }
