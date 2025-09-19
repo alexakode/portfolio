@@ -588,6 +588,12 @@ main {
   background-color: var(--schemes-surface-container);
   color: var(--schemes-on-surface-container);
 }
+.content-grid {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 1rem;
+}
 nav.main-nav {
   grid-column: 1 / -1;
   background-color: var(--schemes-primary);
