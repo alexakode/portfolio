@@ -3,7 +3,8 @@ html {
   box-sizing: border-box;
 }
 html[lang="no"] li > a[lang="no"],
-html[lang="en"] li > a[lang="en"] {
+html[lang="en"] li > a[lang="en"],
+html[lang="es"] li > a[lang="es"] {
   display: none;
 }
 *,
@@ -515,8 +516,8 @@ footer {
 }
 footer > p {
   /* display: flex; */
-  background-color: var(--schemes-primary);
-  color: var(--schemes-on-primary);
+  /* background-color: var(--schemes-primary);
+  color: var(--schemes-on-primary); */
   border-radius: 1rem;
   padding: 0.5rem 1rem;
 }
@@ -528,8 +529,8 @@ header {
   gap: 1rem;
 }
 header h1 {
-  background-color: var(--schemes-primary);
-  color: var(--schemes-on-primary);
+  /* background-color: var(--schemes-primary);
+  color: var(--schemes-on-primary); */
   padding: 0.2rem 1rem;
 }
 nav {
@@ -547,19 +548,21 @@ nav li {
   list-style: none;
 }
 nav a {
-  padding: 0.75rem 1rem;
-  margin: 0.25rem 0;
+  padding: 0.75rem 0.75rem;
+  margin: 0.25rem 0.25rem;
   text-align: center;
   display: block;
   color: var(--schemes-on-primary);
   background-color: var(--schemes-primary);
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-radius 0.3s ease;
 }
 nav a:hover {
   background-color: var(--schemes-secondary);
   color: var(--schemes-on-secondary);
 }
 
-main > nav {
+main nav {
   /* background-color: var(--schemes-background); */
   /* color: var(--schemes-on-background); */
   grid-column: 1 / 2;
@@ -568,26 +571,40 @@ main > nav {
   display: flex; */
   flex-direction: column;
 }
-main > nav li:first-child a {
+main nav li:first-child a {
   /* margin-block-start: none; */
   border-start-start-radius: 1rem;
   border-start-end-radius: 1rem;
 }
-main > nav li:last-child a {
+nav li a:hover {
+  border-start-start-radius: 1rem;
+  border-start-end-radius: 1rem;
+  border-end-start-radius: 1rem;
+  border-end-end-radius: 1rem;
+}
+main nav li:last-child a {
   /* margin-block-end: none; */
   border-end-start-radius: 1rem;
   border-end-end-radius: 1rem;
 }
+header nav li:first-child a {
+  /* margin-block-start: none; */
+  border-start-start-radius: 1rem;
+  border-end-start-radius: 1rem;
+}
+header nav li:last-child a {
+  /* margin-block-end: none; */
+  border-start-end-radius: 1rem;
+  border-end-end-radius: 1rem;
+}
 header ul {
-  background-color: var(--schemes-primary);
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  gap: 1rem;
+  /* justify-content: flex-end; */
+  /* gap: 1rem; */
   list-style: none;
   padding: 0;
   margin: 0;
-  border-radius: 1rem;
 }
 header a {
   color: var(--schemes-on-primary);
