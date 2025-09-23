@@ -792,6 +792,15 @@ article p {
   justify-content: space-between;
   /* text-align: center; */
 }
+.Craftsvilla {
+  color: var(--schemes-primary);
+  outline: 1px solid var(--schemes-primary-container);
+  outline-offset: -0.05em;
+  display: inline-block;
+}
+.Craftsvilla h3 {
+  color: var(--schemes-primary);
+}
 .card a:last-child {
   display: flex;
   margin-top: auto;
