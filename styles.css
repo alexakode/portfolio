@@ -540,6 +540,8 @@ nav {
 }
 nav ul {
   overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 nav li {
   list-style: none;
@@ -556,8 +558,6 @@ nav a:hover {
   background-color: var(--schemes-secondary);
   color: var(--schemes-on-secondary);
 }
-header > nav {
-}
 
 main > nav {
   /* background-color: var(--schemes-background); */
@@ -567,15 +567,6 @@ main > nav {
   padding: 1rem;
   display: flex; */
   flex-direction: column;
-}
-main > nav ul {
-  /* border-radius: 1rem; */
-  overflow: hidden;
-  /* background-color: var(--schemes-primary-container); */
-  /* color: var(--schemes-on-primary-container); */
-  /* list-style: none; */
-  padding: 0;
-  margin: 0;
 }
 main > nav li:first-child a {
   /* margin-block-start: none; */
