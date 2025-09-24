@@ -148,13 +148,13 @@ html[lang="es"] li > a[lang="es"] {
   );
   --schemes-secondary: light-dark(rgb(91 97 71), rgb(195 202 170));
   --schemes-secondary: light-dark(
-    oklch(var(--l-48) var(--c-03) var(--h-primary)),
+    oklch(var(--l-45) var(--c-03) var(--h-primary)),
     oklch(var(--l-82) var(--c-03) var(--h-primary))
   );
   /*--schemes-on-secondary: light-dark(var(--color-white), #1c3439);*/
   --schemes-on-secondary: light-dark(
     var(--color-white),
-    oklch(var(--l-32) var(--c-03) var(--h-primary))
+    oklch(var(--l-28) var(--c-03) var(--h-primary))
   );
   --schemes-secondary-container: light-dark(rgb(223 230 196), rgb(67 73 49));
   --schemes-secondary-container: light-dark(
