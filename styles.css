@@ -158,17 +158,17 @@ html[lang="es"] li > a[lang="es"] {
   );
   --schemes-secondary-container: light-dark(rgb(223 230 196), rgb(67 73 49));
   --schemes-secondary-container: light-dark(
-    oklch(var(--l-92) var(--c-03) var(--h-primary)),
+    oklch(var(--l-90) var(--c-03) var(--h-primary)),
     oklch(var(--l-40) var(--c-03) var(--h-primary))
   );
   --schemes-on-secondary-container: light-dark(rgb(67 73 49), rgb(223 230 196));
   --schemes-on-secondary-container: light-dark(
     oklch(var(--l-40) var(--c-03) var(--h-primary)),
-    oklch(var(--l-92) var(--c-03) var(--h-primary))
+    oklch(var(--l-90) var(--c-03) var(--h-primary))
   );
   --schemes-tertiary: light-dark(rgb(57 102 95), rgb(161 208 199));
   --schemes-tertiary: light-dark(
-    oklch(var(--l-48) var(--c-05) 184),
+    oklch(var(--l-45) var(--c-05) 184),
     oklch(var(--l-82) var(--c-05) 184)
   );
   --schemes-on-tertiary: light-dark(var(--color-white), rgb(2 55 49));
@@ -188,7 +188,7 @@ html[lang="es"] li > a[lang="es"] {
   );
   --schemes-error: light-dark(rgb(186 26 26), rgb(255 180 171));
   --schemes-error: light-dark(
-    oklch(var(--l-50) var(--c-19) 25),
+    oklch(var(--l-45) var(--c-19) 25),
     oklch(var(--l-82) var(--c-08) 25)
   );
   --schemes-on-error: light-dark(var(--color-white), rgb(105 0 5));
@@ -204,7 +204,7 @@ html[lang="es"] li > a[lang="es"] {
   --schemes-on-error-container: light-dark(rgb(147 0 10), rgb(255 218 214));
   --schemes-on-error-container: light-dark(
     oklch(var(--l-40) var(--c-17) 25),
-    oklch(var(--l-92) var(--c-04) 25)
+    oklch(var(--l-90) var(--c-04) 25)
   );
   --schemes-background: light-dark(
     var(--color-surface-light),
@@ -290,40 +290,46 @@ html[lang="es"] li > a[lang="es"] {
       oklch(var(--l-25) var(--c-08) --h-primary),
       oklch(var(--l-80) var(--c-08) --h-primary)
     );
-    --schemes-on-primary: light-dark(var(--color-white), var(--color-black));
+    --schemes-on-primary: light-dark(
+      var(--color-white),
+      oklch(var(--l-15) var(--c-08) --h-primary)
+    );
     --schemes-primary-container: light-dark(
       oklch(var(--l-15) var(--c-08) --h-primary),
       oklch(var(--l-85) var(--c-08) --h-primary)
     );
     --schemes-on-primary-container: light-dark(
       var(--color-white),
-      oklch(var(--l-5) var(--c-00) --h-primary)
+      oklch(var(--l-0) var(--c-00) --h-primary)
     );
     --schemes-secondary: light-dark(
-      oklch(var(--l-10) var(--c-03) --h-primary),
-      oklch(var(--l-98) var(--c-03) --h-primary)
+      oklch(var(--l-15) var(--c-03) --h-primary),
+      oklch(var(--l-100) var(--c-03) --h-primary)
     );
-    --schemes-on-secondary: light-dark(var(--color-white), var(--color-black));
+    --schemes-on-secondary: light-dark(
+      oklch(var(--l-100) var(--c-03) --h-primary),
+      oklch(var(--l-15) var(--c-03) --h-primary)
+    );
     --schemes-secondary-container: light-dark(
       oklch(var(--l-20) var(--c-03) --h-primary),
       oklch(var(--l-90) var(--c-03) --h-primary)
     );
     --schemes-on-secondary-container: light-dark(
       var(--color-white),
-      oklch(var(--l-5) var(--c-00) --h-primary)
+      oklch(var(--l-10) var(--c-00) --h-primary)
     );
     --schemes-tertiary: light-dark(
       oklch(var(--l-15) var(--c-06) 184),
       oklch(var(--l-100) var(--c-06) 184)
     );
-    --schemes-on-tertiary: light-dark(var(--color-white), var(--color-black));
+    --schemes-on-tertiary: light-dark(var(--color-white), oklch(var(--l-15) var(--c-06) 184));
     --schemes-tertiary-container: light-dark(
-      oklch(var(--l-25) var(--c-06) 184),
+      oklch(var(--l-20) var(--c-06) 184),
       oklch(var(--l-90) var(--c-06) 184)
     );
     --schemes-on-tertiary-container: light-dark(
       var(--color-white),
-      oklch(var(--l-5) var(--c-00) 184)
+      oklch(var(--l-10) var(--c-00) 184)
     );
     /* Removed error color overrides; now inherited from :root for DRYness and consistency */
     --schemes-background: light-dark(
@@ -344,7 +350,7 @@ html[lang="es"] li > a[lang="es"] {
     );
     --schemes-on-background: light-dark(
       oklch(var(--l-10) var(--c-01) --h-primary),
-      oklch(var(--l-90) var(--c-01) --h-primary)
+      oklch(var(--l-98) var(--c-01) --h-primary)
     );
     --schemes-on-surface: light-dark(var(--color-black), var(--color-white));
     --schemes-surface-variant: light-dark(
