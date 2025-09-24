@@ -276,7 +276,7 @@ html[lang="es"] li > a[lang="es"] {
     --c-scale: 1.5; /* Enda rikere farger for HDR-opplevelse */
   }
 }
-@media (prefers-contrast: more) {
+@media (prefers-contrast: high) {
   :root {
     /* Only override variables that differ from :root */
     /* Use closest defined variables for lightness and chroma */
@@ -380,7 +380,7 @@ html[lang="es"] li > a[lang="es"] {
     );
   }
 }
-@media (prefers-contrast: less) {
+@media (prefers-contrast: more) {
   :root {
     /* Only override variables that differ from :root, use aliases where possible */
     --schemes-primary: light-dark(rgb(44 59 0), rgb(208 229 150));
