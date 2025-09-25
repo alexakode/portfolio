@@ -87,8 +87,7 @@ html[lang="es"] li > a[lang="es"] {
   --l-primary-static: light-dark(45, 82);
   --delta-l-primary-min: 45;  /*Min for large text, 3:1*/
   --delta-l-primary-max: 55;  /*Max 4.5:1 for small*/
-  --delta-l-primary-dynamic: clamp(var(--delta-l-primary-min), calc(var(--delta-l-primary-max) - var(--fluid-scale)*1)var(--delta-l-primary-max))
-  );
+  --delta-l-primary-dynamic: clamp(var(--delta-l-primary-min), calc(var(--delta-l-primary-max) - var(--fluid-scale)*1)var(--delta-l-primary-max));
   /* ...repeat for other color roles using the scale... */
   color-scheme: light dark;
   /* Base color values (hex/rgb and oklch, use oklch and adapt values) */
