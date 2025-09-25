@@ -83,7 +83,11 @@ html[lang="es"] li > a[lang="es"] {
   --delta-l-dynamic: clamp(
     var(--delta-l-min),
     calc(var(--delta-l-max) - var(--fluid-scale) * 5),
-    (var(--delta-l-max))
+    (var(--delta-l-max)));
+  --l-primary-static: light-dark(45, 82);
+  --delta-l-primary-min: 45;  /*Min for large text, 3:1*/
+  --delta-l-primary-max: 55;  /*Max 4.5:1 for small*/
+  --delta-l-primary-dynamic: clamp(var(--delta-l-primary-min), calc(var(--delta-l-primary-max) - var(--fluid-scale)*1)var(--delta-l-primary-max))
   );
   /* ...repeat for other color roles using the scale... */
   color-scheme: light dark;
@@ -108,7 +112,7 @@ html[lang="es"] li > a[lang="es"] {
     oklch(var(--l-45) var(--c-08) var(--h-primary)),
     oklch(var(--l-82) var(--c-08) var(--h-primary))
   );
-  --schemes-on-primary: light-dark(var(--color-white), rgb(39 53 0));
+  --schemes-on-primary: light-dark(var(--l-primary) + var(--delta-l-primary-dynamic), rgb(39 53 0));
   --schemes-on-primary: light-dark(
     var(--color-white),
     oklch(var(--l-28) var(--c-05) var(--h-primary))
