@@ -83,11 +83,16 @@ html[lang="es"] li > a[lang="es"] {
   --delta-l-dynamic: clamp(
     var(--delta-l-min),
     calc(var(--delta-l-max) - var(--fluid-scale) * 5),
-    (var(--delta-l-max)));
+    (var(--delta-l-max))
+  );
   --l-primary-static: light-dark(45, 82);
-  --delta-l-primary-min: 45;  /*Min for large text, 3:1*/
-  --delta-l-primary-max: 55;  /*Max 4.5:1 for small*/
-  --delta-l-primary-dynamic: clamp(var(--delta-l-primary-min), calc(var(--delta-l-primary-max) - var(--fluid-scale)*1)var(--delta-l-primary-max));
+  --delta-l-primary-min: 45; /*Min for large text, 3:1*/
+  --delta-l-primary-max: 55; /*Max 4.5:1 for small*/
+  --delta-l-primary-dynamic: clamp(
+    var(--delta-l-primary-min),
+    calc(var(--delta-l-primary-max) - var(--fluid-scale) * 1)
+      var(--delta-l-primary-max)
+  );
   /* ...repeat for other color roles using the scale... */
   color-scheme: light dark;
   /* Base color values (hex/rgb and oklch, use oklch and adapt values) */
@@ -111,7 +116,10 @@ html[lang="es"] li > a[lang="es"] {
     oklch(var(--l-45) var(--c-08) var(--h-primary)),
     oklch(var(--l-82) var(--c-08) var(--h-primary))
   );
-  --schemes-on-primary: light-dark(var(--l-primary) + var(--delta-l-primary-dynamic), rgb(39 53 0));
+  --schemes-on-primary: light-dark(
+    var(--l-primary) + var(--delta-l-primary-dynamic),
+    rgb(39 53 0)
+  );
   --schemes-on-primary: light-dark(
     var(--color-white),
     oklch(var(--l-28) var(--c-05) var(--h-primary))
@@ -748,7 +756,7 @@ article p {
   max-width: 60ch;
 }
 .projects {
-  /* grid-column: 2 / -1; */
+  grid-column: 1 / -1;
   background-color: var(--schemes-surface-container);
   color: var(--schemes-on-surface-container);
 }
@@ -790,7 +798,7 @@ article p {
   outline-offset: -0.05em;
   display: inline-block;
 }
-.Craftsvilla h3 {
+.Craftsvilla h4 {
   color: var(--schemes-on-primary);
   background: var(--schemes-primary);
 }
@@ -800,7 +808,8 @@ article p {
   align-items: flex-end;
 }
 .icon {
-  fill: var(--schemes-on-surface);
+  fill: var(--schemes-primary);
+  /* background-color: var(--schemes-surface); */
   height: 2rem;
   width: 2rem;
   border-radius: 1rem;
