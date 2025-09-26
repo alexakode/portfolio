@@ -22,13 +22,11 @@ html[lang="es"] li > a[lang="es"] {
   --accent: oklch(
     var(--base-L) calc(var(--base-C) * var(--C-scale)) var(--base-H)
   );
-}
 
-/* =============================
+  /* =============================
   COLOR SCHEME DECLARATIONS (Optimized with Aliases, Consistent Hue 125)
   =============================
 */
-:root {
   /* Lightness scale (normal distribution: more values in mid-range) */
   --l-100: 100%;
   --l-98: 97.5%;
@@ -60,22 +58,13 @@ html[lang="es"] li > a[lang="es"] {
   --l-10: 10%;
   --l-5: 5%;
   --l-0: 0%;
-
-  /* Chroma scale (normal distribution: more values in mid-range) */
-  --c-scale: 1;
-  --c-00: calc(0 * var(--c-scale));
-  --c-01: calc(0.01 * var(--c-scale));
-  --c-02: calc(0.02 * var(--c-scale));
-  --c-03: calc(0.03 * var(--c-scale));
-  --c-04: calc(0.04 * var(--c-scale));
-  --c-05: calc(0.05 * var(--c-scale));
-  --c-06: calc(0.06 * var(--c-scale));
-  --c-08: calc(0.08 * var(--c-scale));
-  --c-10: calc(0.1 * var(--c-scale));
-  --c-12: calc(0.12 * var(--c-scale));
-  --c-15: calc(0.15 * var(--c-scale));
-  --c-17: calc(0.17 * var(--c-scale));
-  --c-19: calc(0.19 * var(--c-scale));
+  /* I will put my basic font sizes here, because they tie closely into contrasts */
+  --p-min: 0.875rem;
+  --p-fluid: 1vw + 0.5rem;
+  --p-max: 1rem;
+  --lh-step: 1/4;
+  --lh-base: 1;
+  /*  */
   /* I want clamps for contrasts between texts and surfaces to match clamped sizes */
   --delta-l-min: 50; /*lowest delta L for large text*/
   --delta-l-max: 70; /*Highest delta L for normal text*/
@@ -93,6 +82,21 @@ html[lang="es"] li > a[lang="es"] {
     calc(var(--delta-l-primary-max) - var(--fluid-scale) * 1)
       var(--delta-l-primary-max)
   );
+  /* Chroma scale (normal distribution: more values in mid-range) */
+  --c-scale: 1;
+  --c-00: calc(0 * var(--c-scale));
+  --c-01: calc(0.01 * var(--c-scale));
+  --c-02: calc(0.02 * var(--c-scale));
+  --c-03: calc(0.03 * var(--c-scale));
+  --c-04: calc(0.04 * var(--c-scale));
+  --c-05: calc(0.05 * var(--c-scale));
+  --c-06: calc(0.06 * var(--c-scale));
+  --c-08: calc(0.08 * var(--c-scale));
+  --c-10: calc(0.1 * var(--c-scale));
+  --c-12: calc(0.12 * var(--c-scale));
+  --c-15: calc(0.15 * var(--c-scale));
+  --c-17: calc(0.17 * var(--c-scale));
+  --c-19: calc(0.19 * var(--c-scale));
   /* ...repeat for other color roles using the scale... */
   color-scheme: light dark;
   /* Base color values (hex/rgb and oklch, use oklch and adapt values) */
@@ -618,23 +622,56 @@ h3 {
   /* font-weight: bold; */
   margin: 0;
 }
+/* h1 = 3p */
 h1 {
-  font-size: clamp(2rem, 5vw + 1rem, 3rem);
-  line-height: 1.6;
+  font-size: clamp(
+    calc(var(--p-min) * 12 / 4),
+    calc(var(--p-fluid) * 12 / 4),
+    calc(var(--p-max) * 12 / 4)
+  );
+  line-height: calc(var(--lh-base) + var(--lh-step) * 0); /*4/4*/
 }
+/* h2 = 2.5p */
 h2 {
-  font-size: clamp(1.5rem, 4vw + 0.5rem, 2.5rem);
-  line-height: 1.5;
+  font-size: clamp(
+    calc(var(--p-min) * 10 / 4),
+    calc(var(--p-fluid) * 10 / 4),
+    calc(var(--p-max) * 10 / 4)
+  );
+  line-height: calc(var(--lh-base) + var(--lh-step) * 1); /*5/4*/
 }
+/* h3 = 2p */
 h3 {
-  font-size: clamp(1.25rem, 3vw + 0.5rem, 2rem);
-  line-height: 1.5;
+  font-size: clamp(
+    calc(var(--p-min) * 8 / 4),
+    calc(var(--p-fluid) * 8 / 4),
+    calc(var(--p-max) * 8 / 4)
+  );
+  line-height: calc(var(--lh-base) + var(--lh-step) * 2); /*6/4*/
+}
+/* h4 = 1.5p */
+h4 {
+  font-size: clamp(
+    calc(var(--p-min) * 6 / 4),
+    calc(var(--p-fluid) * 6 / 4),
+    calc(var(--p-max) * 6 / 4)
+  );
+  line-height: calc(var(--lh-base) + var(--lh-step) * 3); /*7/4*/
+}
+/* h5 = 1.25p */
+h5 {
+  font-size: clamp(
+    calc(var(--p-min) * 5 / 4),
+    calc(var(--p-fluid) * 5 / 4),
+    calc(var(--p-max) * 5 / 4)
+  );
+  line-height: calc(var(--lh-base) + var(--lh-step) * 4); /*8/4*/
 }
 p {
   color: var(--schemes-on-surface);
   background-color: var(--schemes-surface);
-  font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem);
-  line-height: 1.6;
+  font-size: clamp(var(--p-min), var(--p-fluid), var(--p-max));
+  line-height: calc(var(--lh-base) + var(--lh-step) * 4); /*8/4*/
   margin: 0.5rem 0;
 }
 a {
