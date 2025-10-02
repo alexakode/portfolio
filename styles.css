@@ -564,8 +564,10 @@ nav a:hover {
   background-color: var(--schemes-secondary);
   color: var(--schemes-on-secondary);
 }
-
 main nav {
+  position: sticky;
+  top: 0;
+  align-self: start;
   /* background-color: var(--schemes-background); */
   /* color: var(--schemes-on-background); */
   grid-column: 1 / 2;
@@ -693,10 +695,12 @@ img {
   margin-bottom: 1rem;
 }
 main {
+  margin: auto;
   display: grid;
   grid-template-columns: 10em 2fr;
   gap: 1rem;
   padding: 2rem;
+  justify-items: center;
   background-color: var(--schemes-background);
   color: var(--schemes-on-background);
 }
