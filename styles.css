@@ -697,7 +697,7 @@ img {
 main {
   margin: auto;
   display: grid;
-  grid-template-columns: 10em 2fr;
+  grid-template-columns: 10em 1fr;
   gap: 1rem;
   padding: 2rem;
   justify-items: center;
@@ -709,6 +709,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   gap: 1rem;
+  max-width: calc(2 * 24rem + 1rem);
 }
 /* nav.main-nav {
   /* grid-column: 1 / -1; */
@@ -803,11 +804,14 @@ article p {
 }
 .project-grid {
   flex: 1 1 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12em, 1fr)); */
   /* adjust min to content */
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
+  justify-content: center;
   background-color: var(--schemes-secondary-container);
   color: var(--schemes-on-secondary-container);
   border-radius: 1rem;
@@ -829,6 +833,9 @@ article p {
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  flex: 1 1 12em;
+  /* max-width: 26em; */
+  min-width: 12em;
   justify-content: space-between;
   /* text-align: center; */
 }
@@ -860,7 +867,7 @@ article p {
   background-color: var(--schemes-primary);
   fill: var(--schemes-on-primary);
 }
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 60rem) {
   header,
   main {
     display: flex;
